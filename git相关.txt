@@ -1,0 +1,21 @@
+首次
+create a new repository on the command line
+echo "# mape" >> README.md
+进入文件目录执行（执行完出现.git文件夹）
+git init
+添加全部进缓存
+git add .
+提交
+git commit -m "first commit"
+将你服务器的名字命名成 origin，方便后续操作。
+//git remote add origin https://github.com/betta-/mape.git
+git remote add origin git@github.com:betta-/mape.git
+最后一步，推送，将你修改的内容推送到服务器最后一步，推送，将你修改的内容推送到服务器
+git push -u origin master
+
+
+新建的项目push失败原因是没有将远程库pull到本地
+$git pull https://git.oschina.net/bruin/post.git
+然后再push到远程库
+$git push https://git.oschina.net/bruin/post.git
+
