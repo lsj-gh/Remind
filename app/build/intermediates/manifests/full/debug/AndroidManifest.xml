@@ -30,6 +30,8 @@
         </activity>
         <activity android:name="com.example.administrator.mapleone.activity.MyRecyclerViewActivity" >
         </activity>
+        <activity android:name="com.example.administrator.mapleone.activity.MyShare" >
+        </activity>
     </application>
 
 </manifest>

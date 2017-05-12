@@ -20,6 +20,8 @@
         </activity>
         <activity android:name=".activity.MyRecyclerViewActivity">
         </activity>
+        <activity android:name=".activity.MyShare">
+        </activity>
     </application>
 
 </manifest>

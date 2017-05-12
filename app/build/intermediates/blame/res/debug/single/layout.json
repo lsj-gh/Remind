@@ -156,6 +156,10 @@
         "source": "D:\\Android\\android-sdk-windows\\.android\\build-cache\\ccf5e812ef216c59e8914cae9b721061200403db\\output\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
+        "merged": "D:\\Android\\android\\github\\FirstCode\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_my_share.xml",
+        "source": "D:\\Android\\android\\github\\FirstCode\\app\\src\\main\\res\\layout\\activity_my_share.xml"
+    },
+    {
         "merged": "D:\\Android\\android\\github\\FirstCode\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
         "source": "D:\\Android\\android-sdk-windows\\.android\\build-cache\\ccf5e812ef216c59e8914cae9b721061200403db\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     },

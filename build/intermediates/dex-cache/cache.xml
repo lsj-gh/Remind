@@ -92,6 +92,15 @@
         <dex dex="D:\Android\android\github\FirstCode\app\build\intermediates\pre-dexed\debug\classes_639bcb567f3fcb5c6a40c40e8445d7fa9aab7785.jar" />
     </item>
     <item
+        is-multidex="true"
+        jar="D:\Android\android\github\FirstCode\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="D:\Android\android\github\FirstCode\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_ad4ed172add170762b82e2feb0e7b9686f2e34de\classes.dex" />
+    </item>
+    <item
         is-multidex="false"
         jar="D:\Android\android-sdk-windows\.android\build-cache\09f34a2471446255453c53ea254a0470deeb25e5\output\jars\classes.jar"
         jumboMode="false"
@@ -99,6 +108,15 @@
         revision="25.0.2"
         sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
         <dex dex="D:\Android\android\github\FirstCode\app\build\intermediates\pre-dexed\debug\classes_3bb81d64b9e97a8d51a3bb25d6f1b1f9cbca6f00.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\android\github\FirstCode\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e630e69044dfff635a3a9368f5dad849ae642525">
+        <dex dex="D:\Android\android\github\FirstCode\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_f093325c333081911770df339d4ec5f5f884fe53\classes.dex" />
     </item>
     <item
         is-multidex="false"

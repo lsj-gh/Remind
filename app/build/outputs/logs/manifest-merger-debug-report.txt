@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Android\android\github\FirstCode\app\src\main\AndroidManifest.xml:2:1-25:12
+ADDED from D:\Android\android\github\FirstCode\app\src\main\AndroidManifest.xml:2:1-27:12
 	package
 		ADDED from D:\Android\android\github\FirstCode\app\src\main\AndroidManifest.xml:3:11-55
 		INJECTED from D:\Android\android\github\FirstCode\app\src\main\AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from D:\Android\android\github\FirstCode\app\src\main\AndroidManifest.xml:
 		INJECTED from D:\Android\android\github\FirstCode\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Android\android\github\FirstCode\app\src\main\AndroidManifest.xml
 application
-ADDED from D:\Android\android\github\FirstCode\app\src\main\AndroidManifest.xml:5:5-23:19
+ADDED from D:\Android\android\github\FirstCode\app\src\main\AndroidManifest.xml:5:5-25:19
 MERGED from [com.android.support:appcompat-v7:25.3.1] D:\Android\android-sdk-windows\.android\build-cache\ccf5e812ef216c59e8914cae9b721061200403db\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-v4:25.3.1] D:\Android\android-sdk-windows\.android\build-cache\377669642bed52c086fa1c1da5ae7bde053ab77c\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-fragment:25.3.1] D:\Android\android-sdk-windows\.android\build-cache\82661bd1710b028a45e1827b911d50db88076de3\output\AndroidManifest.xml:29:5-20
@@ -60,6 +60,10 @@ activity#com.example.administrator.mapleone.activity.MyRecyclerViewActivity
 ADDED from D:\Android\android\github\FirstCode\app\src\main\AndroidManifest.xml:21:9-22:20
 	android:name
 		ADDED from D:\Android\android\github\FirstCode\app\src\main\AndroidManifest.xml:21:19-66
+activity#com.example.administrator.mapleone.activity.MyShare
+ADDED from D:\Android\android\github\FirstCode\app\src\main\AndroidManifest.xml:23:9-24:20
+	android:name
+		ADDED from D:\Android\android\github\FirstCode\app\src\main\AndroidManifest.xml:23:19-51
 uses-sdk
 INJECTED from D:\Android\android\github\FirstCode\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:25.3.1] D:\Android\android-sdk-windows\.android\build-cache\ccf5e812ef216c59e8914cae9b721061200403db\output\AndroidManifest.xml:21:5-23:78

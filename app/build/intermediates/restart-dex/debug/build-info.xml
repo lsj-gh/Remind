@@ -2,13 +2,13 @@
 <instant-run
     abi="x86_64,x86"
     api-level="25"
-    build-mode="COLD"
+    build-mode="FULL"
     density="560dpi"
     format="10"
     plugin-version="2.3.0"
-    timestamp="1494206503669"
+    timestamp="1494577267776"
     token="3680092464690086324"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
@@ -23,15 +23,52 @@
         name="verifier"
         duration="0" />
 
+    <artifact
+        location="D:\Android\android\github\FirstCode\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\Android\android\github\FirstCode\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\Android\android\github\FirstCode\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\Android\android\github\FirstCode\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\Android\android\github\FirstCode\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\Android\android\github\FirstCode\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\Android\android\github\FirstCode\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\Android\android\github\FirstCode\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\Android\android\github\FirstCode\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\Android\android\github\FirstCode\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\Android\android\github\FirstCode\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\Android\android\github\FirstCode\app\build\outputs\apk\app-debug.apk"
+        type="SPLIT_MAIN" />
+
     <build
         build-mode="FULL"
-        timestamp="1494206454143"
+        timestamp="1494577267776"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="D:\Android\android\github\FirstCode\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            location="D:\Android\android\github\FirstCode\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="D:\Android\android\github\FirstCode\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            location="D:\Android\android\github\FirstCode\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
         <artifact
             location="D:\Android\android\github\FirstCode\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
@@ -64,9 +101,5 @@
             location="D:\Android\android\github\FirstCode\app\build\outputs\apk\app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
-    <build
-        build-mode="COLD"
-        timestamp="1494206503669"
-        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>

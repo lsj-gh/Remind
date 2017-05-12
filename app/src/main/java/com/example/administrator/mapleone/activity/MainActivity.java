@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivitys(MyRecyclerViewActivity.class);
                 break;
             case 1:
-                toastShow("button2");
+                startActivitys(MyShare.class);
                 break;
             case 2:
                 toastShow("button3");
