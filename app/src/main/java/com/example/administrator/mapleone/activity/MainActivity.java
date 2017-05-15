@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivitys(MyShare.class);
                 break;
             case 2:
-                toastShow("button3");
+                startActivitys(MyDataBase.class);
                 break;
 
         }
