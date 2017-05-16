@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.example.administrator.mapleone">
 
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
     <application
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
@@ -20,11 +21,12 @@
         </activity>
         <activity android:name=".activity.MyRecyclerViewActivity">
         </activity>
-        <activity android:name=".activity.MyShare">
+        <activity android:name=".activity.MyShareActivity">
         </activity>
-        <activity android:name=".activity.MyDataBase">
+        <activity android:name=".activity.MyDataBaseActivity">
         </activity>
-
+        <activity android:name=".activity.MyPermissionActivity">
+        </activity>
     </application>
 
 </manifest>

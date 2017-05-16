@@ -9,7 +9,7 @@ import android.view.View;
 import com.example.administrator.mapleone.R;
 import com.example.administrator.mapleone.dao.MyOpenHelper;
 
-public class MyDataBase extends AppCompatActivity {
+public class MyDataBaseActivity extends AppCompatActivity {
     private MyOpenHelper myOpenHelper;
 
     @Override

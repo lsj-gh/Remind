@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.administrator.mapleone.activity.MyDataBase">
+    tools:context="com.example.administrator.mapleone.activity.MyDataBaseActivity">
 
     <Button
         android:id="@+id/bt_database"

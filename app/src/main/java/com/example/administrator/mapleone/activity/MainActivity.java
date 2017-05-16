@@ -3,6 +3,7 @@ package com.example.administrator.mapleone.activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -12,7 +13,8 @@ import android.widget.Toast;
 import com.example.administrator.mapleone.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private Button button, button2, button3;
+    private Button button, button2, button3,button4;
+    private static final String TAG = "MainActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,9 +27,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button = (Button) findViewById(R.id.button);
         button2 = (Button) findViewById(R.id.button2);
         button3 = (Button) findViewById(R.id.button3);
+        button4 = (Button) findViewById(R.id.bt4);
         button.setOnClickListener(this);
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
+        button4.setOnClickListener(this);
     }
 
     @Override
@@ -52,10 +56,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivitys(MyRecyclerViewActivity.class);
                 break;
             case R.id.button2:
-                startActivitys(MyShare.class);
+                startActivitys(MyShareActivity.class);
                 break;
             case R.id.button3:
-                startActivitys(MyDataBase.class);
+                startActivitys(MyDataBaseActivity.class);
+                break;
+            case R.id.bt4:
+                startActivitys(MyPermissionActivity.class);
+                Log.d(TAG, "onClick: ");
                 break;
 
         }

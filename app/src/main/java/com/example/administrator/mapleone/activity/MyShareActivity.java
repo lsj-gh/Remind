@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import com.example.administrator.mapleone.R;
 
-public class MyShare extends AppCompatActivity {
+public class MyShareActivity extends AppCompatActivity {
     private Button shareButton, getButton;
     private TextView tv_show;
 
