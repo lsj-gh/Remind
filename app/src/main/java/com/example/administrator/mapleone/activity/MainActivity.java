@@ -25,10 +25,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button = (Button) findViewById(R.id.button);
         button2 = (Button) findViewById(R.id.button2);
         button3 = (Button) findViewById(R.id.button3);
-        button.setTag(0);
-        button2.setTag(1);
-        button3.setTag(2);
-        button.setText("recycleview");
         button.setOnClickListener(this);
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
@@ -51,15 +47,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        int tag = (int) v.getTag();
-        switch (tag) {
-            case 0:
+        switch (v.getId()) {
+            case R.id.button:
                 startActivitys(MyRecyclerViewActivity.class);
                 break;
-            case 1:
+            case R.id.button2:
                 startActivitys(MyShare.class);
                 break;
-            case 2:
+            case R.id.button3:
                 startActivitys(MyDataBase.class);
                 break;
 
