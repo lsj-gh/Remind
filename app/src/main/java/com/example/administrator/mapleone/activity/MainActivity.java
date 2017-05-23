@@ -13,7 +13,7 @@ import android.widget.Toast;
 import com.example.administrator.mapleone.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private Button button, button2, button3,button4;
+    private Button button, button2, button3, button4, button5;
     private static final String TAG = "MainActivity";
 
     @Override
@@ -28,10 +28,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button2 = (Button) findViewById(R.id.button2);
         button3 = (Button) findViewById(R.id.button3);
         button4 = (Button) findViewById(R.id.bt4);
+        button5 = (Button) findViewById(R.id.bt5);
         button.setOnClickListener(this);
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
         button4.setOnClickListener(this);
+        button5.setOnClickListener(this);
     }
 
     @Override
@@ -63,7 +65,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt4:
                 startActivitys(MyPermissionActivity.class);
-                Log.d(TAG, "onClick: ");
+                break;
+            case R.id.bt5:
+                startActivitys(MyRunnableActivity.class);
                 break;
 
         }

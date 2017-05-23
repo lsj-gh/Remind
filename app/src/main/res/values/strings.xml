@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">MapleOne</string>
     <string name="quanxian">权限问题</string>
+    <string name="runnable">runnable</string>
 </resources>

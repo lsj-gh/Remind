@@ -3,6 +3,7 @@
           package="com.example.administrator.mapleone">
 
     <uses-permission android:name="android.permission.CALL_PHONE"/>
+
     <application
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
@@ -26,6 +27,8 @@
         <activity android:name=".activity.MyDataBaseActivity">
         </activity>
         <activity android:name=".activity.MyPermissionActivity">
+        </activity>
+        <activity android:name=".activity.MyRunnableActivity">
         </activity>
     </application>
 

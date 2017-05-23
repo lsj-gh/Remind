@@ -3,17 +3,17 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:padding="20dp"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="20dp"
     tools:context="com.example.administrator.mapleone.activity.MainActivity">
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAllCaps="false"
         android:text="MyRecyclerViewActivity"
+        android:textAllCaps="false"
         />
 
     <Button
@@ -31,11 +31,20 @@
         android:text="MyDataBase"
         android:textAllCaps="false"
         />
+
     <Button
         android:id="@+id/bt4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/quanxian"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/bt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/runnable"
         android:textAllCaps="false"
         />
 
