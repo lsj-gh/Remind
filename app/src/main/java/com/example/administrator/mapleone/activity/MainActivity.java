@@ -3,14 +3,13 @@ package com.example.administrator.mapleone.activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.example.administrator.mapleone.R;
+import com.example.administrator.mapleone.utils.Myshow;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private Button button, button2, button3, button4, button5;
@@ -68,6 +67,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt5:
                 startActivitys(MyRunnableActivity.class);
+                Myshow.ts(this,"MyRunnableActivity.class");
                 break;
 
         }
@@ -78,7 +78,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         startActivity(intent);
     }
 
-    private void toastShow(String s) {
-        Toast.makeText(MainActivity.this, s, Toast.LENGTH_SHORT).show();
-    }
 }
