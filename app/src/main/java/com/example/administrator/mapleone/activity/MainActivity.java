@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt4:
                 startActivitys(MyPermissionActivity.class);
+                Myshow.ts(this,"MyPermissionActivity.class");
                 break;
             case R.id.bt5:
                 startActivitys(MyRunnableActivity.class);
