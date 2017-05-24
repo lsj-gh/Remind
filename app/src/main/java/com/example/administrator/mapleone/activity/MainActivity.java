@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.button:
                 startActivitys(MyRecyclerViewActivity.class);
+                Myshow.ts(this,"MyRecyclerViewActivity.class");
                 break;
             case R.id.button2:
                 startActivitys(MyShareActivity.class);
