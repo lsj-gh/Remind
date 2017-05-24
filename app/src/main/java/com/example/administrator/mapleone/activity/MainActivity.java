@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.button2:
                 startActivitys(MyShareActivity.class);
+                Myshow.ts(this,"MyShareActivity.class");
                 break;
             case R.id.button3:
                 startActivitys(MyDataBaseActivity.class);
