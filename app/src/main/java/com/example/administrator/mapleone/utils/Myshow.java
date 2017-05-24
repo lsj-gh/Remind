@@ -1,5 +1,6 @@
 package com.example.administrator.mapleone.utils;
 
+import android.app.Activity;
 import android.content.Context;
 import android.util.Log;
 import android.widget.Toast;
@@ -49,5 +50,18 @@ public class Myshow {
 
     public static void ts(Context context, String s) {
         Toast.makeText(context, s, Toast.LENGTH_SHORT).show();
+    }
+
+    /**
+     * 在UI线程运行弹出
+     */
+    public static void showToastOnUiThread(final Activity ctx, final String text) {
+        if (ctx != null) {
+            ctx.runOnUiThread(new Runnable() {
+                public void run() {
+                    ts(ctx, text);
+                }
+            });
+        }
     }
 }

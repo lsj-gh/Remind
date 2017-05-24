@@ -19,10 +19,10 @@ public class MyRunnableActivity extends AppCompatActivity implements View.OnClic
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
-            Myshow.d(TAG,"go into handleMessage");
+            Myshow.d(TAG, "go into handleMessage");
             switch (msg.what) {
-                case UPDATA_TEXT_RUN :
-                    Myshow.d(TAG,"go into UPDATA_TEXT_RUN");
+                case UPDATA_TEXT_RUN:
+                    Myshow.d(TAG, "go into UPDATA_TEXT_RUN");
                     textView.setText("obtainMessage");
                     break;
             }
@@ -44,7 +44,8 @@ public class MyRunnableActivity extends AppCompatActivity implements View.OnClic
             @Override
             public void run() {
                 handler.obtainMessage(UPDATA_TEXT_RUN).sendToTarget();
-                Myshow.d(TAG,"obtainMessage");
+                Myshow.d(TAG, "obtainMessage");
+                Myshow.showToastOnUiThread(MyRunnableActivity.this, "showToastOnUiThread");
 //                Message message = new Message();
 //                message.what = UPDATA_TEXT_RUN;
 //                handler.sendMessage(message);
