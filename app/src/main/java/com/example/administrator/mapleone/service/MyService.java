@@ -2,6 +2,7 @@ package com.example.administrator.mapleone.service;
 
 import android.app.Service;
 import android.content.Intent;
+import android.os.Binder;
 import android.os.IBinder;
 import android.support.annotation.IntDef;
 
@@ -17,7 +18,8 @@ public class MyService extends Service {
     @Override
     public IBinder onBind(Intent intent) {
         // TODO: Return the communication channel to the service.
-        throw new UnsupportedOperationException("Not yet implemented");
+//        throw new UnsupportedOperationException("Not yet implemented");
+        return new MyBinder();
     }
 
     @Override
@@ -40,8 +42,20 @@ public class MyService extends Service {
         Myshow.d(TAG, "MyService-------------onDestroy()");
     }
 
-    public void showLog() {
+    public class MyBinder extends Binder {
+        public MyService getService() {
+            return MyService.this;
+        }
+    }
+
+    @Override
+    public boolean onUnbind(Intent intent) {
+        return super.onUnbind(intent);
+    }
+
+    public void showLog(String s) {
 //        Myshow.d(TAG, "showLog()");
-        Myshow.d(TAG, logMessage);
+//        Myshow.d(TAG, logMessage);
+        Myshow.d(TAG, s);
     }
 }
