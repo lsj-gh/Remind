@@ -30,6 +30,15 @@
         </activity>
         <activity android:name=".activity.MyRunnableActivity">
         </activity>
+
+        <service
+            android:name=".service.MyService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+
+        <activity android:name=".activity.MyServiceActivity">
+        </activity>
     </application>
 
 </manifest>

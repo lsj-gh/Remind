@@ -12,7 +12,7 @@ import com.example.administrator.mapleone.R;
 import com.example.administrator.mapleone.utils.Myshow;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private Button button, button2, button3, button4, button5;
+    private Button button, button2, button3, button4, button5, button6;
     private static final String TAG = "MainActivity";
 
     @Override
@@ -28,11 +28,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button3 = (Button) findViewById(R.id.button3);
         button4 = (Button) findViewById(R.id.bt4);
         button5 = (Button) findViewById(R.id.bt5);
+        button6 = (Button) findViewById(R.id.bt6);
         button.setOnClickListener(this);
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
         button4.setOnClickListener(this);
         button5.setOnClickListener(this);
+        button6.setOnClickListener(this);
     }
 
     @Override
@@ -55,23 +57,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.button:
                 startActivitys(MyRecyclerViewActivity.class);
-                Myshow.ts(this,"MyRecyclerViewActivity.class");
+                Myshow.ts(this, "MyRecyclerViewActivity.class");
                 break;
             case R.id.button2:
                 startActivitys(MyShareActivity.class);
-                Myshow.ts(this,"MyShareActivity.class");
+                Myshow.ts(this, "MyShareActivity.class");
                 break;
             case R.id.button3:
                 startActivitys(MyDataBaseActivity.class);
-                Myshow.ts(this,"MyDataBaseActivity.class");
+                Myshow.ts(this, "MyDataBaseActivity.class");
                 break;
             case R.id.bt4:
                 startActivitys(MyPermissionActivity.class);
-                Myshow.ts(this,"MyPermissionActivity.class");
+                Myshow.ts(this, "MyPermissionActivity.class");
                 break;
             case R.id.bt5:
                 startActivitys(MyRunnableActivity.class);
-                Myshow.ts(this,"MyRunnableActivity.class");
+                Myshow.ts(this, "MyRunnableActivity.class");
+                break;
+            case R.id.bt6:
+                startActivitys(MyServiceActivity.class);
+                Myshow.ts(this, "MyServiceActivity.class");
                 break;
 
         }

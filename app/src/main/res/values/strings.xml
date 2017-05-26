@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">MapleOne</string>
+    <string name="app_name">wayslde</string>
     <string name="quanxian">权限问题</string>
     <string name="runnable">runnable</string>
+    <string name="service_main">服务service</string>
 </resources>
