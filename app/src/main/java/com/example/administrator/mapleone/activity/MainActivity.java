@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.administrator.mapleone.MyApplication;
 import com.example.administrator.mapleone.R;
 import com.example.administrator.mapleone.utils.Myshow;
 
@@ -77,7 +78,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt6:
                 startActivitys(MyServiceActivity.class);
-                Myshow.ts(this, "MyServiceActivity.class");
+                Myshow.ts(MyApplication.getContext(), "全局context");
                 break;
 
         }
