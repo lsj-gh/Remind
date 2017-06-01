@@ -3,4 +3,5 @@
     <string name="quanxian">权限问题</string>
     <string name="runnable">runnable</string>
     <string name="service_main">服务service</string>
+    <string name="change_icon">更换icon</string>
 </resources>

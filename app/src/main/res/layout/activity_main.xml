@@ -47,11 +47,20 @@
         android:text="@string/runnable"
         android:textAllCaps="false"
         />
+
     <Button
         android:id="@+id/bt6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/service_main"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/bt7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/change_icon"
         android:textAllCaps="false"
         />
 
