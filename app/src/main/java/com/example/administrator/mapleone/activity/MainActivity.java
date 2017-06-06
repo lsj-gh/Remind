@@ -13,7 +13,7 @@ import com.example.administrator.mapleone.R;
 import com.example.administrator.mapleone.utils.Myshow;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private Button button, button2, button3, button4, button5, button6, button7;
+    private Button button, button2, button3, button4, button5, button6, button7, button8;
     private static final String TAG = "MainActivity";
 
     @Override
@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button5 = (Button) findViewById(R.id.bt5);
         button6 = (Button) findViewById(R.id.bt6);
         button7 = (Button) findViewById(R.id.bt7);
+        button8 = (Button) findViewById(R.id.bt8);
         button.setOnClickListener(this);
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button5.setOnClickListener(this);
         button6.setOnClickListener(this);
         button7.setOnClickListener(this);
+        button8.setOnClickListener(this);
     }
 
     @Override
@@ -85,6 +87,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.bt7:
                 startActivitys(MyChangeActivity.class);
                 Myshow.ts(MyApplication.getContext(), "MyChangeActivity.class");
+                break;
+            case R.id.bt8:
+                startActivitys(MyLongClickActivity.class);
+                Myshow.ts(MyApplication.getContext(), "MyLongClickActivity.class");
                 break;
 
         }

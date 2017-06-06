@@ -4,4 +4,7 @@
     <string name="runnable">runnable</string>
     <string name="service_main">服务service</string>
     <string name="change_icon">更换icon</string>
+    <string name="longclick">LongClick</string>
+    <string name="up_my">up</string>
+    <string name="down_my">down</string>
 </resources>
