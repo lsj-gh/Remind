@@ -70,6 +70,8 @@
         </activity>
         <activity android:name=".activity.MyLongClickActivity">
         </activity>
+        <activity android:name=".activity.MyLongClickImpActivity">
+        </activity>
     </application>
 
 </manifest>

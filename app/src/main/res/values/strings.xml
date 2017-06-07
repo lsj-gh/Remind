@@ -7,4 +7,7 @@
     <string name="longclick">LongClick</string>
     <string name="up_my">up</string>
     <string name="down_my">down</string>
+    <string name="long_click_imp">longClickImp</string>
+    <string name="bt_click_jump">跳转</string>
+    <string name="bt_islive">查看是否存活</string>
 </resources>
