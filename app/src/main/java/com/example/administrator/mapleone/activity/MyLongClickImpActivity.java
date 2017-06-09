@@ -2,6 +2,8 @@ package com.example.administrator.mapleone.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 import android.view.View;
@@ -12,6 +14,8 @@ import com.example.administrator.mapleone.modle.MyLongClickModle;
 import com.example.administrator.mapleone.modle.MyLongClickModleImp;
 import com.example.administrator.mapleone.utils.Myshow;
 
+import java.lang.ref.WeakReference;
+
 public class MyLongClickImpActivity extends AppCompatActivity implements View.OnTouchListener, View.OnLongClickListener,
         View.OnClickListener {
     private Button buttonUp, buttonDown, buttonJump, buttonIslive;
@@ -20,6 +24,7 @@ public class MyLongClickImpActivity extends AppCompatActivity implements View.On
     private boolean isFirstLongClick = true;
     private boolean isOnTouch = false;
     MyLongClickModle myLongClickModle;
+    MyDelayHanlder myDelayHanlder = new MyDelayHanlder(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +45,28 @@ public class MyLongClickImpActivity extends AppCompatActivity implements View.On
         myLongClickModle = MyLongClickModleImp.getInstance(this);
     }
 
+    private static class MyDelayHanlder extends Handler {
+        WeakReference<MyLongClickImpActivity> mActivity;
+
+        public MyDelayHanlder(MyLongClickImpActivity myLongClickImpActivity) {
+            mActivity = new WeakReference<MyLongClickImpActivity>(myLongClickImpActivity);
+        }
+
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            switch (msg.what) {
+                case 1:
+                    Myshow.d(TAG, "---长按已经取消了，可以点击了");
+                    mActivity.get().isFirstLongClick = true;
+                    mActivity.get().isOnTouch = false;
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
+
     @Override
     public boolean onTouch(View v, MotionEvent event) {
         if (isOnTouch) {
@@ -50,16 +77,23 @@ public class MyLongClickImpActivity extends AppCompatActivity implements View.On
                     if (i == MotionEvent.ACTION_DOWN) {
                         myLongClickModle.isRunClick(true);
                         myLongClickModle.myClickUp();
+                        myDelayHanlder.removeMessages(1);
                     } else if (i == MotionEvent.ACTION_UP) {
                         myLongClickModle.isRunClick(false);
+//                        设置延时三秒后无操作，就恢复短按状态
+                        myDelayHanlder.removeMessages(1);
+                        myDelayHanlder.sendEmptyMessageDelayed(1, 3000);
                     }
                     break;
                 case R.id.bt_long_click_down:
                     if (i == MotionEvent.ACTION_DOWN) {
                         myLongClickModle.isRunClick(true);
                         myLongClickModle.myClickDown();
+                        myDelayHanlder.removeMessages(1);
                     } else if (i == MotionEvent.ACTION_UP) {
                         myLongClickModle.isRunClick(false);
+                        myDelayHanlder.removeMessages(1);
+                        myDelayHanlder.sendEmptyMessageDelayed(1, 3000);
                     }
                     break;
             }
@@ -94,7 +128,7 @@ public class MyLongClickImpActivity extends AppCompatActivity implements View.On
             case R.id.bt_click_jump:
                 startActivity(new Intent(MyLongClickImpActivity.this, MainActivity.class));
                 break;
-            case R.id.bt_isalive:
+            case R.id.bt_isalive://检查线程是否还活着
 //                startActivity(new Intent(MyLongClickImpActivity.this, MainActivity.class));
                 myLongClickModle.checkIsAlive();
                 break;
