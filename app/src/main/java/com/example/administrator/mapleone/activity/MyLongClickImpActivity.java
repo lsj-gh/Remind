@@ -60,6 +60,7 @@ public class MyLongClickImpActivity extends AppCompatActivity implements View.On
                     Myshow.d(TAG, "---长按已经取消了，可以点击了");
                     mActivity.get().isFirstLongClick = true;
                     mActivity.get().isOnTouch = false;
+//                    mActivity.get()
                     break;
                 default:
                     break;

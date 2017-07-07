@@ -38,7 +38,7 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
         public ViewHolder(View itemView) {
             super(itemView);
             tv_name = (TextView) itemView.findViewById(R.id.name);
-            tv_age = (TextView) itemView.findViewById(R.id.age);
+//            tv_age = (TextView) itemView.findViewById(R.id.age);
         }
     }
 
@@ -53,7 +53,7 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
     public void onBindViewHolder(final ViewHolder holder, int position) {
         People people = mPeoples.get(position);
         holder.tv_name.setText(people.getName());
-        holder.tv_age.setText("wayside---" + people.getAge());
+//        holder.tv_age.setText("wayside---" + people.getAge());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

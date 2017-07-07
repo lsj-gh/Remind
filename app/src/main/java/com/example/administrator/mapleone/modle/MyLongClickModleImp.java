@@ -15,8 +15,8 @@ public class MyLongClickModleImp implements MyLongClickModle {
     private static final String TAG = "MyLongClickModleImp";
     private boolean isRuns = false;
     private static MyLongClickModleImp instance;
-    private Thread myUpThread = new Thread(new MyUpThread());
-    private Thread myDownThread = new Thread(new MyDownThread());
+    Thread myUpThread = new Thread(new MyUpThread());
+    Thread myDownThread = new Thread(new MyDownThread());
 
     public static MyLongClickModleImp getInstance(Context context) {
         if (instance == null) {
@@ -32,12 +32,14 @@ public class MyLongClickModleImp implements MyLongClickModle {
 
     @Override
     public void myClickUp() {
-        myUpThread.start();
+        new Thread(new MyUpThread()).start();
+//        myUpThread.start();
     }
 
     @Override
     public void myClickDown() {
-        myDownThread.start();
+        new Thread(new MyDownThread()).start();
+//        myDownThread.start();
     }
 
     @Override
@@ -60,7 +62,8 @@ public class MyLongClickModleImp implements MyLongClickModle {
                             .DAXIAO);
                     sleep(500);
                 } catch (InterruptedException e) {
-                    e.printStackTrace();
+                    Thread.currentThread().interrupt();// 异常处理
+                    throw new RuntimeException(e);
                 }
 
             }
@@ -78,7 +81,8 @@ public class MyLongClickModleImp implements MyLongClickModle {
                             .DAXIAO);
                     sleep(500);
                 } catch (InterruptedException e) {
-                    e.printStackTrace();
+                    Thread.currentThread().interrupt();// 异常处理
+                    throw new RuntimeException(e);
                 }
 
             }

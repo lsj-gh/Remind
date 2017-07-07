@@ -3,6 +3,7 @@ package com.example.administrator.mapleone.activity;
 import android.nfc.Tag;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -20,6 +21,7 @@ public class MyRecyclerViewActivity extends AppCompatActivity {
     private MyRecyclerViewAdapter adapter;
     private RecyclerView recyclerView;
     private static final String TAG = "MyRecyclerViewActivity";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,14 +29,25 @@ public class MyRecyclerViewActivity extends AppCompatActivity {
         peopleList = new ArrayList<>();
         initPeople();
         recyclerView = (RecyclerView) findViewById(R.id.recycler);
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
-        recyclerView.setLayoutManager(linearLayoutManager);
+//        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+        GridLayoutManager mGridLayoutManager = new GridLayoutManager(this, 4);
+        mGridLayoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
+            @Override
+            public int getSpanSize(int position) {
+                if (position % 5 == 0) {
+                    return (4);
+                } else {
+                    return (1);
+                }
+            }
+        });
+        recyclerView.setLayoutManager(mGridLayoutManager);
         adapter = new MyRecyclerViewAdapter(peopleList);
         recyclerView.setAdapter(adapter);
         adapter.setOnItemClickListener(new MyRecyclerViewAdapter.OnItemClickListener() {
             @Override
             public void OnClick(View view, int position) {
-                Log.d(TAG,position+"");
+                Log.d(TAG, position + "");
             }
         });
     }
