@@ -1,2 +1,2 @@
-# FirstCode
-firstcode
+# Remind
+about git
